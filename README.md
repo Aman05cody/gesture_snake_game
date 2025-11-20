@@ -1,4 +1,3 @@
-// filepath: c:\Users\Aman\OneDrive\Desktop\gesture_snake_game\README.md
 # 🐍 Gesture Controlled Snake — Play with Gestures! 🎮✨
 
 A lightweight, fun Snake game with gesture-based control (mouse/gesture input fallback). Designed to be simple, extensible and pretty.
