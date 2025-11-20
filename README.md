@@ -1,77 +1,45 @@
-# 🐍 Gesture Controlled Snake — Play with Gestures! 🎮✨
+# 🐍 Gesture Controlled Snake Game 🎮
 
-A lightweight, fun Snake game with gesture-based control (mouse/gesture input fallback). Designed to be simple, extensible and pretty.
+A classic Snake game controlled by mouse gestures, built with Python 🐍 and Pygame.
 
-──────────────────────────────────────────────────────────────────────────────
-📁 Project structure
-──────────────────────────────────────────────────────────────────────────────
-gesture_snake_game/
-├─ [snake_game.py](http://_vscodecontentref_/0)        — main game loop, drawing, collision, scoring
-├─ [gesture_input.py](http://_vscodecontentref_/1)     — gesture / mouse input handler (direction provider)
-├─ [settings.py](http://_vscodecontentref_/2)          — constants: WINDOW_WIDTH, CELL_SIZE, colors, SNAKE_SPEED
-├─ requirements.txt     — Python deps (e.g., pygame)
-├─ LICENSE              — project license (MIT)
-├─ .gitignore           — ignore rules for this repo
-└─ README.md            — this file
+## ✨ Features
+- 👆 **Gesture Control:** Control the snake's direction by moving your mouse.
+- 🍎 **Classic Gameplay:** Eat food to grow longer and increase your score.
+- 💥 **Collision Detection:** The game ends if you hit a wall or yourself.
+- 🔄 **Simple Restart:** Easily restart the game with a keypress (`SPACE` or `R`) or a mouse click.
+- 🔧 **Configurable:** Adjust game settings like speed, colors, and window size in `settings.py`.
 
-──────────────────────────────────────────────────────────────────────────────
-✨ Features
-──────────────────────────────────────────────────────────────────────────────
-- 🎯 Gesture / mouse directional control
-- 🍎 Random food spawns and growing snake
-- 💥 Wall & self-collision detection with Game Over screen
-- 🔁 Restart via SPACE / R key or mouse click
-- ⚙️ Configurable via [settings.py](http://_vscodecontentref_/3) (speed, colors, cell size)
+## 🚀 Quick Start
 
-──────────────────────────────────────────────────────────────────────────────
-🚀 Quick start (Windows)
-──────────────────────────────────────────────────────────────────────────────
-1) Create and activate virtual env (optional)
-   python -m venv .venv
-   .venv\Scripts\activate
+1.  **Install Dependencies** 📦
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2) Install deps
-   pip install -r requirements.txt
+2.  **Run the Game** ▶️
+    ```bash
+    python snake_game.py
+    ```
 
-3) Run the game
-   python [snake_game.py](http://_vscodecontentref_/4)
+## 🕹️ Controls
 
-──────────────────────────────────────────────────────────────────────────────
-🕹 Controls & Gestures
-──────────────────────────────────────────────────────────────────────────────
-- Move mouse or perform gestures — the input module translates the largest directional motion into (UP, DOWN, LEFT, RIGHT).
-- Game Over: press SPACE or R, or click to restart.
-- (Optional) Add keyboard fallbacks in [snake_game.py](http://_vscodecontentref_/5) if you prefer arrow/wasd controls.
+- **Move Snake** 🐍: Move your mouse in the desired direction (Up, Down, Left, or Right).
+- **Restart Game** 🔁: After a "Game Over", press `SPACE`, `R`, or click the mouse to play again.
 
-──────────────────────────────────────────────────────────────────────────────
-⚙ Configuration (settings.py)
-──────────────────────────────────────────────────────────────────────────────
-- WINDOW_WIDTH, WINDOW_HEIGHT — game window size
-- CELL_SIZE — size of each grid cell
-- SNAKE_SPEED — frames per second (game speed)
-- BG_COLOR, SNAKE_COLOR, FOOD_COLOR — visual palette
-- MOUSE_MOVE_THRESHOLD — tweak gesture sensitivity
+## ⚙️ Configuration
 
-──────────────────────────────────────────────────────────────────────────────
-🧩 How it works (brief)
-──────────────────────────────────────────────────────────────────────────────
-- The snake is a list of (x,y) segments on a CELL_SIZE grid.
-- Each update moves the head by one cell in the current direction.
-- Eating food increases score and grows the snake; collisions end the game.
+You can customize the game by editing the `settings.py` file:
 
-──────────────────────────────────────────────────────────────────────────────
-🧡 Contributing
-──────────────────────────────────────────────────────────────────────────────
-Contributions welcome — open issues or PRs. Keep changes focused and include tests where appropriate.
+- 🖼️ `WINDOW_WIDTH`, `WINDOW_HEIGHT`: Game window size.
+- 📏 `CELL_SIZE`: Size of the snake and food.
+- ⚡ `SNAKE_SPEED`: Game speed (frames per second).
+- 🎨 `SNAKE_COLOR`, `FOOD_COLOR`, `BG_COLOR`: Game colors.
+- 🖱️ `MOUSE_MOVE_THRESHOLD`: Sensitivity for gesture detection.
 
-──────────────────────────────────────────────────────────────────────────────
-📄 License
-──────────────────────────────────────────────────────────────────────────────
-MIT License — see LICENSE file.
+## 🤝 Contributing
 
-──────────────────────────────────────────────────────────────────────────────
-Have fun! 🎉 — Play, tweak, and extend. If you want, I can:
-- add a CONTRIBUTING.md
-- create unit tests for game logic
-- add keyboard controls fallback
-──────────────────────────────────────────────────────────────────────────────
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## 📜 License
+
+This project is licensed under the MIT License.
