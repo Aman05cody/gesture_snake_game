@@ -1,5 +1,3 @@
-# settings.py
-
 WINDOW_WIDTH  = 640
 WINDOW_HEIGHT = 480
 CELL_SIZE     = 20

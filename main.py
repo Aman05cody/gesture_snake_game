@@ -1,5 +1,3 @@
-# main.py
-
 from settings import WINDOW_WIDTH, WINDOW_HEIGHT
 from snake_game import SnakeGame
 from gesture_input import GestureInput

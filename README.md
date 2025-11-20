@@ -1,12 +1,13 @@
 # 🐍 Gesture Controlled Snake Game 🎮
 
-A classic Snake game controlled by mouse gestures, built with Python 🐍 and Pygame.
+A classic Snake game with dual controls! Play with mouse gestures or traditional keyboard arrows. Built with Python 🐍 and Pygame.
 
 ## ✨ Features
-- 👆 **Gesture Control:** Control the snake's direction by moving your mouse.
+- 👆 **Gesture Control:** Click and drag your mouse to guide the snake.
+- ⌨️ **Keyboard Control:** Use Arrow Keys or WASD for classic snake gameplay.
 - 🍎 **Classic Gameplay:** Eat food to grow longer and increase your score.
 - 💥 **Collision Detection:** The game ends if you hit a wall or yourself.
-- 🔄 **Simple Restart:** Easily restart the game with a keypress (`SPACE` or `R`) or a mouse click.
+- 🔄 **Simple Restart:** Easily restart the game with a keypress (`SPACE`) or a mouse click.
 - 🔧 **Configurable:** Adjust game settings like speed, colors, and window size in `settings.py`.
 
 ## 🚀 Quick Start
@@ -18,12 +19,13 @@ A classic Snake game controlled by mouse gestures, built with Python 🐍 and Py
 
 2.  **Run the Game** ▶️
     ```bash
-    python snake_game.py
+    python main.py
     ```
 
 ## 🕹️ Controls
 
-- **Move Snake** 🐍: Move your mouse in the desired direction (Up, Down, Left, or Right).
+- **Gesture** 🖱️: Click, drag, and release the mouse in the direction you want to go.
+- **Keyboard** ⌨️: Use the **Arrow Keys** or **WASD** keys to change direction.
 - **Restart Game** 🔁: After a "Game Over", press `SPACE`, `R`, or click the mouse to play again.
 
 ## ⚙️ Configuration

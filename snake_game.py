@@ -1,5 +1,3 @@
-# snake_game.py
-
 import pygame
 import random
 from settings import *
@@ -91,15 +89,13 @@ class SnakeGame:
                     pygame.quit()
                     return
 
-                # On game over: restart triggers
                 if self.game_over:
                     if event.type == pygame.KEYDOWN:
                         if event.key == pygame.K_r or event.key == pygame.K_SPACE:
                             self.reset()
                     if event.type == pygame.MOUSEBUTTONDOWN:
                         self.reset()
-                # Optional: you could add keyboard direction fallback here if desired
-                # else: handle direction input if game not over
+                # else: you could process keyboard movement fallback here
 
             if not self.game_over:
                 dir_from_gesture = gesture_input.get_direction()
@@ -110,7 +106,6 @@ class SnakeGame:
             self.draw()
 
             if self.game_over:
-                # Game Over screen
                 font_big = pygame.font.SysFont(None, 60)
                 font_small = pygame.font.SysFont(None, 40)
 
@@ -124,7 +119,6 @@ class SnakeGame:
                 self.screen.blit(msg2, rect2)
                 pygame.display.flip()
 
-                # Slow down while waiting
                 self.clock.tick(5)
             else:
                 self.clock.tick(SNAKE_SPEED)

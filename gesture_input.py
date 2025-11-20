@@ -1,4 +1,3 @@
-# gesture_input.py
 
 import pygame
 from settings import WINDOW_WIDTH, WINDOW_HEIGHT, MOUSE_MOVE_THRESHOLD, DIR_UP, DIR_DOWN, DIR_LEFT, DIR_RIGHT
@@ -25,7 +24,6 @@ class GestureInput:
         dy = pos[1] - self.last_pos[1]
 
         direction = None
-        # decide based on larger movement
         if abs(dx) > abs(dy):
             if dx > self.threshold:
                 direction = DIR_RIGHT
@@ -37,7 +35,6 @@ class GestureInput:
             elif dy < -self.threshold:
                 direction = DIR_UP
 
-        # update
         if direction:
             self.last_direction = direction
             self.last_pos = pos
